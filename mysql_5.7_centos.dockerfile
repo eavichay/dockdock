@@ -29,7 +29,7 @@ RUN cd /tmp\
  && rm mysql57-community-release-el7-7.noarch.rpm
  
 ADD my_5.7.cnf /etc/my.cnf
-ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+ADD mysql_5.7_supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 3306
 
