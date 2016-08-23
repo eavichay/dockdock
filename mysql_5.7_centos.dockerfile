@@ -28,7 +28,7 @@ RUN cd /tmp\
  && yum install -y mysql-community-client mysql-community-server\
  && rm mysql57-community-release-el7-7.noarch.rpm
  
-ADD my.cnf /etc/my.cnf
+ADD my_5.7.cnf /etc/my.cnf
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 3306
