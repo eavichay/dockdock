@@ -18,8 +18,8 @@
 # sort_buffer_size = 2M
 # read_rnd_buffer_size = 2M
 
-datadir=/var/storage/mysql
-socket=/var/lib/mysql/mysql.sock
+datadir=/var/mysql/data
+socket=/var/mysql/mysql.sock
 
 # Disabling symbolic-links is recommended to prevent assorted security risks
 
