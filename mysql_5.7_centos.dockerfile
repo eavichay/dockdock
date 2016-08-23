@@ -33,4 +33,8 @@ ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 3306
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+# Initialize database on target mysql data folder and start supervisord
+CMD ["/mysql_5.7_start.sh"]
+
+# Use this if you alter the build file to initialize the database on docker creation
+# CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
